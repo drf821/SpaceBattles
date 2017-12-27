@@ -42,7 +42,7 @@ public class Space extends JPanel implements Runnable, KeyListener {
     public Space(int level, int difficulty) {
         spaceList = new ArrayList<SpaceObject>();
         spaceList.clear();
-        userShip = new UserSpaceShip(90, 0, 960, 800, 50, 0, new Polygon(), 50, 0);
+        userShip = new UserSpaceShip(90, 960, 800, 0, new Polygon());
         spaceList.add(userShip);
         // the value of difficulty will determine f ore the frequency whhen the game is played
         switch (difficulty + 1) {
@@ -65,29 +65,45 @@ public class Space extends JPanel implements Runnable, KeyListener {
         // the value of level will determine the EnemySpaceShips that will be on the screen
         switch (level + 1) {
             case 1:
-                spaceList.add(new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
+               // spaceList.add(new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
+                spaceList.add(new EnemySpaceShip(270, 960, 100, 0, new Polygon(), f));
+
                 break;
             case 2:
-                spaceList.add(new EnemySpaceShip(270, 0, 720, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1200, 200, 50, 0, new Polygon(), 50, 0, f));
+                //spaceList.add(new EnemySpaceShip(270, 0, 720, 200, 50, 0, new Polygon(), 50, 0, f));
+                //spaceList.add(new EnemySpaceShip(270, 0, 1200, 200, 50, 0, new Polygon(), 50, 0, f));
+                spaceList.add(new EnemySpaceShip(270, 720, 200, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1200, 200, 0, new Polygon(), f));
                 break;
             case 3:
-                spaceList.add(new EnemySpaceShip(270, 0, 320, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1600, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 320, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 1600, 200, 50, 0, new Polygon(), 50, 0, f));
+                spaceList.add(new EnemySpaceShip(270, 320, 200,  0, new Polygon(),f));
+                spaceList.add(new EnemySpaceShip(270, 960, 100, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1600, 200, 0, new Polygon(), f));
                 break;
             case 4:
-                spaceList.add(new EnemySpaceShip(270, 0, 320, 100, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 640, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1280, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1600, 100, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 320, 100, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 640, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 1280, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 1600, 100, 50, 0, new Polygon(), 50, 0, f));
+                spaceList.add(new EnemySpaceShip(270, 320, 100,  0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 640, 200, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1280, 200, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1600, 100, 0, new Polygon(),  f));
                 break;
             case 5:
-                spaceList.add(new EnemySpaceShip(270, 0, 320, 250, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 640, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add( new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1280, 200, 50, 0, new Polygon(), 50, 0, f));
-                spaceList.add(new EnemySpaceShip(270, 0, 1600, 250, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 320, 250, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 640, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add( new EnemySpaceShip(270, 0, 960, 100, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 1280, 200, 50, 0, new Polygon(), 50, 0, f));
+//                spaceList.add(new EnemySpaceShip(270, 0, 1600, 250, 50, 0, new Polygon(), 50, 0, f));
+                spaceList.add(new EnemySpaceShip(270, 320, 250, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 640, 200, 0, new Polygon(), f));
+                spaceList.add( new EnemySpaceShip(270, 960, 100, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1280, 200, 0, new Polygon(), f));
+                spaceList.add(new EnemySpaceShip(270, 1600, 250, 0, new Polygon(), f));
                 break;
         }
         this.start();

@@ -21,6 +21,9 @@ public class SpaceProjectile extends SpaceObject {
     public SpaceProjectile( int d, int t, int x, int y, int si,  int sp, Polygon p){
         super( d, t, x, y, si, sp, p);
     }
+    public SpaceProjectile( int d, int x, int y,   int sp, Polygon p){
+        super( d, x, y, sp, p);
+    }
     //A method when a SpaceProjectile leaves the screen
     public void startProjectile(){
     

@@ -33,6 +33,12 @@ public class EnemySpaceShip extends SpaceShip {
         this.userX = 0;
         this.userY = 0;
     }
+    public EnemySpaceShip(int d, int x, int y, int sp, Polygon p,  int a){ //Polygon p,
+        super( d, x, y, sp, p);//p,
+        this.action = a;
+        this.userX = 0; //consider removing
+        this.userY = 0; //consider removing
+    }
     public void onRightTurn(){
         setTurn(1);
     }

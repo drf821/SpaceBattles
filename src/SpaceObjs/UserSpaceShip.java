@@ -30,8 +30,8 @@ public class UserSpaceShip extends SpaceShip {
         super();
     }
     //Filled UserSpaceShip constructor
-    public UserSpaceShip( int d, int t, int x, int y, int si, int sp, Polygon p, int f, int b){
-        super(d, t, x, y, si, sp, p, f, b);
+    public UserSpaceShip( int d, int x, int y,  int sp, Polygon p){
+        super(d, x, y, sp, p);
     }
     public void onForwardForce(){
         super.setSpeed(12);

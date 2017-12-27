@@ -41,6 +41,11 @@ public class SpaceShip extends SpaceObject{
         this.ForwardForce = f;
         this.BackwardForce = b;
     }
+    public SpaceShip(int d,int x, int y, int sp, Polygon p){ 
+        super( d, x, y, sp, p); 
+        this.ForwardForce = 0;  //consider removing
+        this.BackwardForce = 0; //consider removing
+    }
     //Set and get methods for Spaceship Variables
     public void setForwardForce(int val){
         this.ForwardForce = val;

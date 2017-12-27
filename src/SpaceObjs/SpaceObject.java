@@ -65,6 +65,16 @@ public class SpaceObject {
         
         this.polygon                     =      new     Polygon(xarr, yarr, 5);
     }
+    public SpaceObject( int d, int x, int y, int sp, Polygon p) {//, Polygon p){
+        this.direction                   =              d; // Direction (degrees clockwise from the 3:00 position)
+        this.turn                        =              0;
+        this.yPosition                   =              y;
+        this.xPosition                   =              x;
+        this.size                        =              50; // consider removing
+        this.speed                       =              0; //consider removing
+        
+        this.polygon                     =      new     Polygon(xarr, yarr, 5);
+    }
 
     //get and set methods for all SpaceObject Variables
     public int getTurn() {
