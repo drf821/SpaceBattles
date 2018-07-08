@@ -5,7 +5,7 @@ package SpaceObjs;
 // Written by: Daniel Faubel
 // Description: SpaceObject has variables and methods that other SpaceObjects are extended from
 //              
-// Challenges: 
+// Challenges:  hi
 //
 // Time Spent: 30 min
 // Revision History:
